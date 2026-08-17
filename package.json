@@ -35,5 +35,9 @@
     "balance",
     "web"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wanglaixiang-cyber/dsh-deepseek-quota.git"
+  }
 }

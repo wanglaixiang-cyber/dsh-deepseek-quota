@@ -1,0 +1,39 @@
+{
+  "name": "dsh-deepseek-quota",
+  "version": "0.5.0",
+  "description": "DeepSeek API quota widget for the dsh web GUI: draggable floating card with remaining balance, today's consumption and live conversation cost (shell.overlay slot; auto-avoids dsh-better-sidebar panels).",
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "docs"
+  ],
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "slots"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "deepseek",
+    "deepseek-harness",
+    "plugin",
+    "quota",
+    "balance",
+    "web"
+  ],
+  "license": "MIT"
+}
